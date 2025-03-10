@@ -17,6 +17,7 @@ mongoose.connect(process.env.MONGO_URI, {
     .catch(err => console.log(err));
 // Routes
 app.use('/articles', require('./routes/articleRoutes'));
+app.use('/email', require('./routes/emailRoutes'));
 console.log('hey');
 console.log(addition(5, 3));      // Résultat : 8
 console.log(soustraction(10, 4)); // Résultat : 6
