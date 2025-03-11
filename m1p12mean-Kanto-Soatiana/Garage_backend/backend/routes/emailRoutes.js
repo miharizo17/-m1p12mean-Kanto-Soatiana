@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('../server');
 const nodemailer = require('nodemailer');
+
 router.post('/send-email', async (req, res) => {
     const { to, subject, text } = req.body;
 
